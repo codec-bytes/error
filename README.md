@@ -14,3 +14,12 @@ See [docs](https://aureooms.github.io/js-codec/index.html).
 [![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-codec.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-codec)
 [![GitHub issues](https://img.shields.io/github/issues/aureooms/js-codec.svg?style=flat)](https://github.com/aureooms/js-codec/issues)
 [![Documentation](https://aureooms.github.io/js-codec/badge.svg)](https://aureooms.github.io/js-codec/source.html)
+
+## String codecs
+
+* [@aureooms/js-codec-ascii](https://github.com/aureooms/js-codec-ascii)
+* [@aureooms/js-codec-utf16](https://github.com/aureooms/js-codec-utf16)
+* [@aureooms/js-codec-utf8](https://github.com/aureooms/js-codec-utf8)
+* [@aureooms/js-codec-base64](https://github.com/aureooms/js-codec-base64)
+* [@aureooms/js-codec-base32](https://github.com/aureooms/js-codec-base32)
+* [@aureooms/js-codec-base16](https://github.com/aureooms/js-codec-base16)

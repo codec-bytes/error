@@ -1,0 +1,41 @@
+{
+  "coverage": "0%",
+  "expectCount": 10,
+  "actualCount": 0,
+  "files": {
+    "src/CodecError.js": {
+      "expectCount": 7,
+      "actualCount": 0,
+      "undocumentLines": [
+        3,
+        5,
+        9,
+        13,
+        11,
+        10,
+        12
+      ]
+    },
+    "src/DecodeError.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/EncodeError.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    },
+    "src/TranslateError.js": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        3
+      ]
+    }
+  }
+}

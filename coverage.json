@@ -1,19 +1,18 @@
 {
   "coverage": "0%",
-  "expectCount": 10,
+  "expectCount": 9,
   "actualCount": 0,
   "files": {
     "src/CodecError.js": {
-      "expectCount": 7,
+      "expectCount": 6,
       "actualCount": 0,
       "undocumentLines": [
         3,
         5,
         9,
-        13,
         11,
-        10,
-        12
+        12,
+        10
       ]
     },
     "src/DecodeError.js": {

@@ -3,7 +3,7 @@
     "__docId__": 0,
     "kind": "file",
     "name": "src/CodecError.js",
-    "content": "import { ValueError } from '@aureooms/js-error' ;\n\nexport class CodecError extends ValueError {\n\n\tconstructor ( encoding , reason , object , start , end ) {\n\n\t\tsuper( reason ) ;\n\n\t\tthis.encoding = encoding ;\n\t\tthis.reason = reason.toString() ;\n\t\tthis.object = object ;\n\t\tthis.start = start ;\n\t\tthis.end = end ;\n\n\t}\n\n}\n",
+    "content": "import { ValueError } from '@aureooms/js-error' ;\n\nexport class CodecError extends ValueError {\n\n\tconstructor ( encoding , reason , object , position ) {\n\n\t\tsuper( reason ) ;\n\n\t\tthis.encoding = encoding ;\n\t\tthis.reason = reason.toString() ;\n\t\tthis.object = object ;\n\t\tthis.position = position ;\n\n\t}\n\n}\n",
     "static": true,
     "longname": "src/CodecError.js",
     "access": null,
@@ -74,13 +74,7 @@
         ]
       },
       {
-        "name": "start",
-        "types": [
-          "*"
-        ]
-      },
-      {
-        "name": "end",
+        "name": "position",
         "types": [
           "*"
         ]
@@ -159,10 +153,10 @@
   {
     "__docId__": 6,
     "kind": "member",
-    "name": "start",
+    "name": "position",
     "memberof": "src/CodecError.js~CodecError",
     "static": false,
-    "longname": "src/CodecError.js~CodecError#start",
+    "longname": "src/CodecError.js~CodecError#position",
     "access": null,
     "description": null,
     "lineNumber": 12,
@@ -181,32 +175,9 @@
   },
   {
     "__docId__": 7,
-    "kind": "member",
-    "name": "end",
-    "memberof": "src/CodecError.js~CodecError",
-    "static": false,
-    "longname": "src/CodecError.js~CodecError#end",
-    "access": null,
-    "description": null,
-    "lineNumber": 13,
-    "undocument": true,
-    "unknown": [
-      {
-        "tagName": "@_undocument",
-        "tagValue": ""
-      }
-    ],
-    "type": {
-      "types": [
-        "*"
-      ]
-    }
-  },
-  {
-    "__docId__": 8,
     "kind": "file",
     "name": "src/DecodeError.js",
-    "content": "import { CodecError } from './CodecError' ;\n\nexport class DecodeError extends CodecError {\n\n\n}\n",
+    "content": "import { CodecError } from './CodecError' ;\n\nexport class DecodeError extends CodecError { }\n",
     "static": true,
     "longname": "src/DecodeError.js",
     "access": null,
@@ -214,7 +185,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 9,
+    "__docId__": 8,
     "kind": "class",
     "name": "DecodeError",
     "memberof": "src/DecodeError.js",
@@ -239,10 +210,10 @@
     ]
   },
   {
-    "__docId__": 10,
+    "__docId__": 9,
     "kind": "file",
     "name": "src/EncodeError.js",
-    "content": "import { CodecError } from './CodecError' ;\n\nexport class EncodeError extends CodecError {\n\n\n}\n",
+    "content": "import { CodecError } from './CodecError' ;\n\nexport class EncodeError extends CodecError { }\n",
     "static": true,
     "longname": "src/EncodeError.js",
     "access": null,
@@ -250,7 +221,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 11,
+    "__docId__": 10,
     "kind": "class",
     "name": "EncodeError",
     "memberof": "src/EncodeError.js",
@@ -275,10 +246,10 @@
     ]
   },
   {
-    "__docId__": 12,
+    "__docId__": 11,
     "kind": "file",
     "name": "src/TranslateError.js",
-    "content": "import { CodecError } from './CodecError' ;\n\nexport class TranslateError extends CodecError {\n\n\n}\n",
+    "content": "import { CodecError } from './CodecError' ;\n\nexport class TranslateError extends CodecError { }\n",
     "static": true,
     "longname": "src/TranslateError.js",
     "access": null,
@@ -286,7 +257,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 13,
+    "__docId__": 12,
     "kind": "class",
     "name": "TranslateError",
     "memberof": "src/TranslateError.js",
@@ -311,7 +282,7 @@
     ]
   },
   {
-    "__docId__": 14,
+    "__docId__": 13,
     "kind": "file",
     "name": "src/index.js",
     "content": "export * from './CodecError' ;\nexport * from './DecodeError' ;\nexport * from './EncodeError' ;\nexport * from './TranslateError' ;\n",
@@ -322,7 +293,7 @@
     "lineNumber": 1
   },
   {
-    "__docId__": 16,
+    "__docId__": 15,
     "kind": "external",
     "name": "Infinity",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
@@ -334,7 +305,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 17,
+    "__docId__": 16,
     "kind": "external",
     "name": "NaN",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
@@ -346,7 +317,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 18,
+    "__docId__": 17,
     "kind": "external",
     "name": "undefined",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
@@ -358,7 +329,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 19,
+    "__docId__": 18,
     "kind": "external",
     "name": "null",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
@@ -370,7 +341,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 20,
+    "__docId__": 19,
     "kind": "external",
     "name": "Object",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
@@ -382,7 +353,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 21,
+    "__docId__": 20,
     "kind": "external",
     "name": "object",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
@@ -394,7 +365,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 22,
+    "__docId__": 21,
     "kind": "external",
     "name": "Function",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
@@ -406,7 +377,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 23,
+    "__docId__": 22,
     "kind": "external",
     "name": "function",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
@@ -418,7 +389,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 24,
+    "__docId__": 23,
     "kind": "external",
     "name": "Boolean",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
@@ -430,7 +401,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 25,
+    "__docId__": 24,
     "kind": "external",
     "name": "boolean",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
@@ -442,7 +413,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 26,
+    "__docId__": 25,
     "kind": "external",
     "name": "Symbol",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
@@ -454,7 +425,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 27,
+    "__docId__": 26,
     "kind": "external",
     "name": "Error",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
@@ -466,7 +437,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 28,
+    "__docId__": 27,
     "kind": "external",
     "name": "EvalError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
@@ -478,7 +449,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 29,
+    "__docId__": 28,
     "kind": "external",
     "name": "InternalError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
@@ -490,7 +461,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 30,
+    "__docId__": 29,
     "kind": "external",
     "name": "RangeError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
@@ -502,7 +473,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 31,
+    "__docId__": 30,
     "kind": "external",
     "name": "ReferenceError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
@@ -514,7 +485,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 32,
+    "__docId__": 31,
     "kind": "external",
     "name": "SyntaxError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
@@ -526,7 +497,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 33,
+    "__docId__": 32,
     "kind": "external",
     "name": "TypeError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
@@ -538,7 +509,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 34,
+    "__docId__": 33,
     "kind": "external",
     "name": "URIError",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
@@ -550,7 +521,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 35,
+    "__docId__": 34,
     "kind": "external",
     "name": "Number",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
@@ -562,7 +533,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 36,
+    "__docId__": 35,
     "kind": "external",
     "name": "number",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
@@ -574,7 +545,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 37,
+    "__docId__": 36,
     "kind": "external",
     "name": "Date",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
@@ -586,7 +557,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 38,
+    "__docId__": 37,
     "kind": "external",
     "name": "String",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
@@ -598,7 +569,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 39,
+    "__docId__": 38,
     "kind": "external",
     "name": "string",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
@@ -610,7 +581,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 40,
+    "__docId__": 39,
     "kind": "external",
     "name": "RegExp",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
@@ -622,7 +593,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 41,
+    "__docId__": 40,
     "kind": "external",
     "name": "Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
@@ -634,7 +605,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 42,
+    "__docId__": 41,
     "kind": "external",
     "name": "Int8Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
@@ -646,7 +617,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 43,
+    "__docId__": 42,
     "kind": "external",
     "name": "Uint8Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
@@ -658,7 +629,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 44,
+    "__docId__": 43,
     "kind": "external",
     "name": "Uint8ClampedArray",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
@@ -670,7 +641,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 45,
+    "__docId__": 44,
     "kind": "external",
     "name": "Int16Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
@@ -682,7 +653,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 46,
+    "__docId__": 45,
     "kind": "external",
     "name": "Uint16Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
@@ -694,7 +665,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 47,
+    "__docId__": 46,
     "kind": "external",
     "name": "Int32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
@@ -706,7 +677,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 48,
+    "__docId__": 47,
     "kind": "external",
     "name": "Uint32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
@@ -718,7 +689,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 49,
+    "__docId__": 48,
     "kind": "external",
     "name": "Float32Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
@@ -730,7 +701,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 50,
+    "__docId__": 49,
     "kind": "external",
     "name": "Float64Array",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
@@ -742,7 +713,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 51,
+    "__docId__": 50,
     "kind": "external",
     "name": "Map",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
@@ -754,7 +725,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 52,
+    "__docId__": 51,
     "kind": "external",
     "name": "Set",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
@@ -766,7 +737,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 53,
+    "__docId__": 52,
     "kind": "external",
     "name": "WeakMap",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
@@ -778,7 +749,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 54,
+    "__docId__": 53,
     "kind": "external",
     "name": "WeakSet",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
@@ -790,7 +761,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 55,
+    "__docId__": 54,
     "kind": "external",
     "name": "ArrayBuffer",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
@@ -802,7 +773,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 56,
+    "__docId__": 55,
     "kind": "external",
     "name": "DataView",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
@@ -814,7 +785,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 57,
+    "__docId__": 56,
     "kind": "external",
     "name": "JSON",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
@@ -826,7 +797,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 58,
+    "__docId__": 57,
     "kind": "external",
     "name": "Promise",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
@@ -838,7 +809,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 59,
+    "__docId__": 58,
     "kind": "external",
     "name": "Generator",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
@@ -850,7 +821,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 60,
+    "__docId__": 59,
     "kind": "external",
     "name": "GeneratorFunction",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
@@ -862,7 +833,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 61,
+    "__docId__": 60,
     "kind": "external",
     "name": "Reflect",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
@@ -874,7 +845,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 62,
+    "__docId__": 61,
     "kind": "external",
     "name": "Proxy",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
@@ -887,7 +858,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 64,
+    "__docId__": 63,
     "kind": "external",
     "name": "CanvasRenderingContext2D",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D",
@@ -899,7 +870,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 65,
+    "__docId__": 64,
     "kind": "external",
     "name": "DocumentFragment",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment",
@@ -911,7 +882,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 66,
+    "__docId__": 65,
     "kind": "external",
     "name": "Element",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Element",
@@ -923,7 +894,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 67,
+    "__docId__": 66,
     "kind": "external",
     "name": "Event",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Event",
@@ -935,7 +906,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 68,
+    "__docId__": 67,
     "kind": "external",
     "name": "Node",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/Node",
@@ -947,7 +918,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 69,
+    "__docId__": 68,
     "kind": "external",
     "name": "NodeList",
     "externalLink": "https://developer.mozilla.org/en-US/docs/Web/API/NodeList",
@@ -959,7 +930,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 70,
+    "__docId__": 69,
     "kind": "external",
     "name": "XMLHttpRequest",
     "externalLink": "https://developer.mozilla.org/en/docs/Web/API/XMLHttpRequest",
@@ -971,7 +942,7 @@
     "builtinExternal": true
   },
   {
-    "__docId__": 71,
+    "__docId__": 70,
     "kind": "external",
     "name": "AudioContext",
     "externalLink": "https://developer.mozilla.org/en/docs/Web/API/AudioContext",

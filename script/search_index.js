@@ -372,27 +372,21 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/codecerror.js~codecerror#end",
-    "class/src/CodecError.js~CodecError.html#instance-member-end",
-    "src/CodecError.js~CodecError#end",
-    "member"
-  ],
-  [
     "src/codecerror.js~codecerror#object",
     "class/src/CodecError.js~CodecError.html#instance-member-object",
     "src/CodecError.js~CodecError#object",
     "member"
   ],
   [
-    "src/codecerror.js~codecerror#reason",
-    "class/src/CodecError.js~CodecError.html#instance-member-reason",
-    "src/CodecError.js~CodecError#reason",
+    "src/codecerror.js~codecerror#position",
+    "class/src/CodecError.js~CodecError.html#instance-member-position",
+    "src/CodecError.js~CodecError#position",
     "member"
   ],
   [
-    "src/codecerror.js~codecerror#start",
-    "class/src/CodecError.js~CodecError.html#instance-member-start",
-    "src/CodecError.js~CodecError#start",
+    "src/codecerror.js~codecerror#reason",
+    "class/src/CodecError.js~CodecError.html#instance-member-reason",
+    "src/CodecError.js~CodecError#reason",
     "member"
   ],
   [

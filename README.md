@@ -20,6 +20,6 @@ See [docs](https://aureooms.github.io/js-codec/index.html).
   - [x] [@aureooms/js-codec-ascii](https://github.com/aureooms/js-codec-ascii)
   - [ ] [@aureooms/js-codec-utf16](https://github.com/aureooms/js-codec-utf16)
   - [ ] [@aureooms/js-codec-utf8](https://github.com/aureooms/js-codec-utf8)
-  - [ ] [@aureooms/js-codec-base64](https://github.com/aureooms/js-codec-base64)
+  - [x] [@aureooms/js-codec-base64](https://github.com/aureooms/js-codec-base64)
   - [ ] [@aureooms/js-codec-base32](https://github.com/aureooms/js-codec-base32)
   - [x] [@aureooms/js-codec-base16](https://github.com/aureooms/js-codec-base16)

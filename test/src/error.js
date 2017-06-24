@@ -15,10 +15,9 @@ function macro ( t , MyCodecError ) {
 	const reason = Math.random();
 	const reasonstring = reason.toString();
 	const object = Math.random() ;
-	const start = Math.random() ;
-	const end = Math.random() ;
+	const position = Math.random() ;
 
-	const myerror = new MyCodecError( encoding , reason , object , start , end ) ;
+	const myerror = new MyCodecError( encoding , reason , object , position ) ;
 
 	t.truthy( myerror ) ;
 
@@ -30,8 +29,7 @@ function macro ( t , MyCodecError ) {
 	t.is( myerror.reason , reasonstring ) ;
 	t.is( myerror.message , myerror.reason ) ;
 	t.is( myerror.object , object ) ;
-	t.is( myerror.start , start ) ;
-	t.is( myerror.end , end ) ;
+	t.is( myerror.position , position ) ;
 
 }
 

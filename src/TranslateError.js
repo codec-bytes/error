@@ -1,6 +1,3 @@
 import { CodecError } from './CodecError' ;
 
-export class TranslateError extends CodecError {
-
-
-}
+export class TranslateError extends CodecError { }

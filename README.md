@@ -4,16 +4,20 @@
 Codecs for JavaScript.
 See [docs](https://aureooms.github.io/js-codec/index.html).
 
-[![License](https://img.shields.io/github/license/aureooms/js-codec.svg?style=flat)](https://raw.githubusercontent.com/aureooms/js-codec/master/LICENSE)
-[![NPM version](https://img.shields.io/npm/v/@aureooms/js-codec.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-codec)
-[![Build status](https://img.shields.io/travis/aureooms/js-codec.svg?style=flat)](https://travis-ci.org/aureooms/js-codec)
-[![Coverage status](https://img.shields.io/coveralls/aureooms/js-codec.svg?style=flat)](https://coveralls.io/r/aureooms/js-codec)
-[![Dependencies status](https://img.shields.io/david/aureooms/js-codec.svg?style=flat)](https://david-dm.org/aureooms/js-codec)
-[![Dev dependencies status](https://img.shields.io/david/dev/aureooms/js-codec.svg?style=flat)](https://david-dm.org/aureooms/js-codec?type=dev)
-[![Code Climate](https://img.shields.io/codeclimate/github/aureooms/js-codec.svg?style=flat)](https://codeclimate.com/github/aureooms/js-codec)
-[![NPM downloads per month](https://img.shields.io/npm/dm/@aureooms/js-codec.svg?style=flat)](https://www.npmjs.org/package/@aureooms/js-codec)
-[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-codec.svg?style=flat)](https://github.com/aureooms/js-codec/issues)
+[![License](https://img.shields.io/github/license/aureooms/js-codec.svg)](https://raw.githubusercontent.com/aureooms/js-codec/master/LICENSE)
+[![Version](https://img.shields.io/npm/v/@aureooms/js-codec.svg)](https://www.npmjs.org/package/@aureooms/js-codec)
+[![Build](https://img.shields.io/travis/aureooms/js-codec/master.svg)](https://travis-ci.org/aureooms/js-codec/branches)
+[![Dependencies](https://img.shields.io/david/aureooms/js-codec.svg)](https://david-dm.org/aureooms/js-codec)
+[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-codec.svg)](https://david-dm.org/aureooms/js-codec?type=dev)
+[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-codec.svg)](https://github.com/aureooms/js-codec/issues)
+[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-codec.svg)](https://www.npmjs.org/package/@aureooms/js-codec)
+
+[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-codec.svg)](https://codeclimate.com/github/aureooms/js-codec/issues)
+[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-codec.svg)](https://codeclimate.com/github/aureooms/js-codec/trends/churn)
+[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-codec/master.svg)](https://codecov.io/gh/aureooms/js-codec)
+[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-codec.svg)](https://codeclimate.com/github/aureooms/js-codec/trends/technical_debt)
 [![Documentation](https://aureooms.github.io/js-codec/badge.svg)](https://aureooms.github.io/js-codec/source.html)
+[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-codec)](https://bundlephobia.com/result?p=@aureooms/js-codec)
 
 ## String codecs
 

@@ -21,6 +21,8 @@ function macro ( t , MyCodecError ) {
 
 	t.truthy( myerror ) ;
 
+	t.true( myerror instanceof Error ) ;
+
 	t.true( myerror instanceof ValueError ) ;
 
 	t.true( myerror instanceof CodecError ) ;

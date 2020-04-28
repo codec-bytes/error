@@ -66,5 +66,8 @@
     "test": "ava",
     "esdoc": "esdoc",
     "prepare": "npm run build"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }

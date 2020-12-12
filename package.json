@@ -76,7 +76,7 @@
     "url": "https://github.com/aureooms/js-codec/issues"
   },
   "dependencies": {
-    "@aureooms/js-error": "^4.0.0"
+    "@aureooms/js-error": "^4.0.1"
   },
   "devDependencies": {
     "@babel/cli": "7.12.10",

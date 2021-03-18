@@ -7,7 +7,7 @@ import {
 	EncodeError ,
 	DecodeError ,
 	TranslateError ,
-} from '../../src' ;
+} from "../../src/index.js" ;
 
 function macro ( t , MyCodecError ) {
 

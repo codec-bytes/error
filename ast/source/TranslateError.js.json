@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 96,
+  "end": 95,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 96,
+    "end": 95,
     "loc": {
       "start": {
         "line": 1,
@@ -45,30 +45,30 @@
         "specifiers": [
           {
             "type": "ImportSpecifier",
-            "start": 9,
-            "end": 19,
+            "start": 8,
+            "end": 18,
             "loc": {
               "start": {
                 "line": 1,
-                "column": 9
+                "column": 8
               },
               "end": {
                 "line": 1,
-                "column": 19
+                "column": 18
               }
             },
             "imported": {
               "type": "Identifier",
-              "start": 9,
-              "end": 19,
+              "start": 8,
+              "end": 18,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 19
+                  "column": 18
                 },
                 "identifierName": "CodecError"
               },
@@ -76,16 +76,16 @@
             },
             "local": {
               "type": "Identifier",
-              "start": 9,
-              "end": 19,
+              "start": 8,
+              "end": 18,
               "loc": {
                 "start": {
                   "line": 1,
-                  "column": 9
+                  "column": 8
                 },
                 "end": {
                   "line": 1,
-                  "column": 19
+                  "column": 18
                 },
                 "identifierName": "CodecError"
               },
@@ -95,29 +95,29 @@
         ],
         "source": {
           "type": "StringLiteral",
-          "start": 27,
-          "end": 41,
+          "start": 25,
+          "end": 42,
           "loc": {
             "start": {
               "line": 1,
-              "column": 27
+              "column": 25
             },
             "end": {
               "line": 1,
-              "column": 41
+              "column": 42
             }
           },
           "extra": {
-            "rawValue": "./CodecError",
-            "raw": "'./CodecError'"
+            "rawValue": "./CodecError.js",
+            "raw": "'./CodecError.js'"
           },
-          "value": "./CodecError"
+          "value": "./CodecError.js"
         }
       },
       {
         "type": "ExportNamedDeclaration",
         "start": 45,
-        "end": 95,
+        "end": 94,
         "loc": {
           "start": {
             "line": 3,
@@ -125,7 +125,7 @@
           },
           "end": {
             "line": 3,
-            "column": 50
+            "column": 49
           }
         },
         "specifiers": [],
@@ -133,7 +133,7 @@
         "declaration": {
           "type": "ClassDeclaration",
           "start": 52,
-          "end": 95,
+          "end": 94,
           "loc": {
             "start": {
               "line": 3,
@@ -141,7 +141,7 @@
             },
             "end": {
               "line": 3,
-              "column": 50
+              "column": 49
             }
           },
           "id": {
@@ -181,7 +181,7 @@
           "body": {
             "type": "ClassBody",
             "start": 92,
-            "end": 95,
+            "end": 94,
             "loc": {
               "start": {
                 "line": 3,
@@ -189,7 +189,7 @@
               },
               "end": {
                 "line": 3,
-                "column": 50
+                "column": 49
               }
             },
             "body": []
@@ -269,16 +269,16 @@
         "binop": null
       },
       "value": "CodecError",
-      "start": 9,
-      "end": 19,
+      "start": 8,
+      "end": 18,
       "loc": {
         "start": {
           "line": 1,
-          "column": 9
+          "column": 8
         },
         "end": {
           "line": 1,
-          "column": 19
+          "column": 18
         }
       }
     },
@@ -294,16 +294,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 20,
-      "end": 21,
+      "start": 18,
+      "end": 19,
       "loc": {
         "start": {
           "line": 1,
-          "column": 20
+          "column": 18
         },
         "end": {
           "line": 1,
-          "column": 21
+          "column": 19
         }
       }
     },
@@ -320,16 +320,16 @@
         "binop": null
       },
       "value": "from",
-      "start": 22,
-      "end": 26,
+      "start": 20,
+      "end": 24,
       "loc": {
         "start": {
           "line": 1,
-          "column": 22
+          "column": 20
         },
         "end": {
           "line": 1,
-          "column": 26
+          "column": 24
         }
       }
     },
@@ -346,17 +346,17 @@
         "binop": null,
         "updateContext": null
       },
-      "value": "./CodecError",
-      "start": 27,
-      "end": 41,
+      "value": "./CodecError.js",
+      "start": 25,
+      "end": 42,
       "loc": {
         "start": {
           "line": 1,
-          "column": 27
+          "column": 25
         },
         "end": {
           "line": 1,
-          "column": 41
+          "column": 42
         }
       }
     },
@@ -559,16 +559,16 @@
         "postfix": false,
         "binop": null
       },
-      "start": 94,
-      "end": 95,
+      "start": 93,
+      "end": 94,
       "loc": {
         "start": {
           "line": 3,
-          "column": 49
+          "column": 48
         },
         "end": {
           "line": 3,
-          "column": 50
+          "column": 49
         }
       }
     },
@@ -585,8 +585,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 96,
-      "end": 96,
+      "start": 95,
+      "end": 95,
       "loc": {
         "start": {
           "line": 4,

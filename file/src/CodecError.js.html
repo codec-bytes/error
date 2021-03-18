@@ -38,21 +38,17 @@
 </nav>
 
 <div class="content" data-ice="content"><h1 data-ice="title">src/CodecError.js</h1>
-<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import { ValueError } from &apos;@aureooms/js-error&apos; ;
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">import {ValueError} from &apos;@aureooms/js-error&apos;;
 
 export class CodecError extends ValueError {
+	constructor(encoding, reason, object, position) {
+		super(reason);
 
-	constructor ( encoding , reason , object , position ) {
-
-		super( reason ) ;
-
-		this.encoding = encoding ;
-		this.reason = reason.toString() ;
-		this.object = object ;
-		this.position = position ;
-
+		this.encoding = encoding;
+		this.reason = reason.toString();
+		this.object = object;
+		this.position = position;
 	}
-
 }
 </code></pre>
 

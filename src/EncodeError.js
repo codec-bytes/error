@@ -1,3 +1,3 @@
-import { CodecError } from "./CodecError.js" ;
+import {CodecError} from './CodecError.js';
 
-export class EncodeError extends CodecError { }
+export class EncodeError extends CodecError {}

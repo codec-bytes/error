@@ -1,4 +1,4 @@
-export * from './CodecError' ;
-export * from './DecodeError' ;
-export * from './EncodeError' ;
-export * from './TranslateError' ;
+export * from './CodecError.js';
+export * from './DecodeError.js';
+export * from './EncodeError.js';
+export * from './TranslateError.js';

@@ -1,16 +1,12 @@
-import { ValueError } from '@aureooms/js-error' ;
+import {ValueError} from '@aureooms/js-error';
 
 export class CodecError extends ValueError {
+	constructor(encoding, reason, object, position) {
+		super(reason);
 
-	constructor ( encoding , reason , object , position ) {
-
-		super( reason ) ;
-
-		this.encoding = encoding ;
-		this.reason = reason.toString() ;
-		this.object = object ;
-		this.position = position ;
-
+		this.encoding = encoding;
+		this.reason = reason.toString();
+		this.object = object;
+		this.position = position;
 	}
-
 }

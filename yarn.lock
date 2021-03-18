@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@aureooms/js-error@^5.0.0":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@aureooms/js-error/-/js-error-5.0.1.tgz#474e2f1dd7189f97df770b5cc6f1bda536de262d"
-  integrity sha512-BbbpKpp4W8L2x9vL4bas+JtuAe4PMojzTpf21puHPw5p3S+lgKd8SfS9y40pVHi/b3SrQrdpmsaEKjL4xviilQ==
+"@aureooms/js-error@^5.0.2":
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/@aureooms/js-error/-/js-error-5.0.2.tgz#dc2ad2fc2b10365581c32c28222daccc5c3c9600"
+  integrity sha512-HLO95kmZ1nJV5qo8Xq7czHVskFGPkM3l60JFgdTnpvCH6P6lkyWDBplaDB9gI5cPvcRIZDs1HeAHhAlHR/jBxw==
 
 "@babel/code-frame@7.12.11":
   version "7.12.11"

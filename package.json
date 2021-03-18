@@ -1,7 +1,7 @@
 {
   "name": "@aureooms/js-codec",
   "description": "Codecs for JavaScript",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "license": "AGPL-3.0",
   "author": "aureooms",
   "homepage": "https://aureooms.github.io/js-codec",

@@ -6,7 +6,7 @@ See [docs](https://aureooms.github.io/js-codec/index.html).
 
 [![License](https://img.shields.io/github/license/aureooms/js-codec.svg)](https://raw.githubusercontent.com/aureooms/js-codec/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@aureooms/js-codec.svg)](https://www.npmjs.org/package/@aureooms/js-codec)
-[![Build](https://img.shields.io/travis/aureooms/js-codec/main.svg)](https://travis-ci.org/aureooms/js-codec/branches)
+[![Build](https://img.shields.io/travis/aureooms/js-codec/main.svg)](https://travis-ci.com/aureooms/js-codec/branches)
 [![Dependencies](https://img.shields.io/david/aureooms/js-codec.svg)](https://david-dm.org/aureooms/js-codec)
 [![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-codec.svg)](https://david-dm.org/aureooms/js-codec?type=dev)
 [![GitHub issues](https://img.shields.io/github/issues/aureooms/js-codec.svg)](https://github.com/aureooms/js-codec/issues)

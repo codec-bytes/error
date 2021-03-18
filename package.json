@@ -177,5 +177,30 @@
   },
   "prettier": {
     "trailingComma": "all"
+  },
+  "xo": {
+    "prettier": true,
+    "plugins": [
+      "unicorn"
+    ],
+    "rules": {
+      "unicorn/filename-case": [
+        "error",
+        {
+          "cases": {
+            "camelCase": true,
+            "pascalCase": true
+          }
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "doc/**"
+        ],
+        "env": "browser"
+      }
+    ]
   }
 }

@@ -1,8 +1,8 @@
-[@aureooms/js-codec](https://aureooms.github.io/js-codec)
+[@aureooms/js-codec](https://make-github-pseudonymous-again.github.io/js-codec)
 ==
 
 Codecs for JavaScript.
-See [docs](https://aureooms.github.io/js-codec/index.html).
+See [docs](https://make-github-pseudonymous-again.github.io/js-codec/index.html).
 
 [![License](https://img.shields.io/github/license/aureooms/js-codec.svg)](https://raw.githubusercontent.com/aureooms/js-codec/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@aureooms/js-codec.svg)](https://www.npmjs.org/package/@aureooms/js-codec)
@@ -16,7 +16,7 @@ See [docs](https://aureooms.github.io/js-codec/index.html).
 [![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-codec.svg)](https://codeclimate.com/github/aureooms/js-codec/trends/churn)
 [![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-codec/main.svg)](https://codecov.io/gh/aureooms/js-codec)
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-codec.svg)](https://codeclimate.com/github/aureooms/js-codec/trends/technical_debt)
-[![Documentation](https://aureooms.github.io/js-codec/badge.svg)](https://aureooms.github.io/js-codec/source.html)
+[![Documentation](https://make-github-pseudonymous-again.github.io/js-codec/badge.svg)](https://make-github-pseudonymous-again.github.io/js-codec/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-codec)](https://bundlephobia.com/result?p=@aureooms/js-codec)
 
 ## String codecs

@@ -7,10 +7,10 @@
   "homepage": "https://make-github-pseudonymous-again.github.io/js-codec",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aureooms/js-codec"
+    "url": "https://github.com/make-github-pseudonymous-again/js-codec"
   },
   "bugs": {
-    "url": "https://github.com/aureooms/js-codec/issues"
+    "url": "https://github.com/make-github-pseudonymous-again/js-codec/issues"
   },
   "keywords": [
     "codec",

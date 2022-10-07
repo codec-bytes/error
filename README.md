@@ -1,3 +1,4 @@
+:fax:
 [@codec-bytes/error](https://codec-bytes.github.io/error)
 ==
 
@@ -21,9 +22,9 @@ See [docs](https://codec-bytes.github.io/error/index.html).
 
 ## String codecs
 
-  - [x] [@codec-bytes/error-ascii](https://github.com/codec-bytes/error-ascii)
-  - [ ] [@codec-bytes/error-utf16](https://github.com/codec-bytes/error-utf16)
-  - [ ] [@codec-bytes/error-utf8](https://github.com/codec-bytes/error-utf8)
-  - [x] [@codec-bytes/error-base64](https://github.com/codec-bytes/error-base64)
-  - [x] [@codec-bytes/error-base32](https://github.com/codec-bytes/error-base32)
-  - [x] [@codec-bytes/error-base16](https://github.com/codec-bytes/error-base16)
+  - [x] [@codec-bytes/ascii](https://github.com/codec-bytes/ascii)
+  - [ ] [@codec-bytes/utf16](https://github.com/codec-bytes/utf16)
+  - [ ] [@codec-bytes/utf8](https://github.com/codec-bytes/utf8)
+  - [x] [@codec-bytes/base64](https://github.com/codec-bytes/base64)
+  - [x] [@codec-bytes/base32](https://github.com/codec-bytes/base32)
+  - [x] [@codec-bytes/base16](https://github.com/codec-bytes/base16)

@@ -6,10 +6,10 @@ or [npm](https://github.com/npm/npm).
 
 ### jspm
 ```terminal
-jspm install npm:@aureooms/js-codec
+jspm install npm:@codec-bytes/error
 ```
 
 ### npm
 ```terminal
-npm install @aureooms/js-codec --save
+npm install @codec-bytes/error --save
 ```

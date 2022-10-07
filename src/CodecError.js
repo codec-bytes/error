@@ -1,4 +1,4 @@
-import {ValueError} from '@aureooms/js-error';
+import {ValueError} from '@failure-abstraction/error';
 
 export class CodecError extends ValueError {
 	constructor(encoding, reason, object, position) {

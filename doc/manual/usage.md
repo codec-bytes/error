@@ -10,7 +10,7 @@ import 'regenerator-runtime/runtime.js' ;
 
 Then
 ```js
-const codec = require( '@aureooms/js-codec' ) ;
+const codec = require( '@codec-bytes/error' ) ;
 // or
-import * as codec from '@aureooms/js-codec' ;
+import * as codec from '@codec-bytes/error' ;
 ```

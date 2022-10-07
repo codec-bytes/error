@@ -1,16 +1,16 @@
 {
-  "name": "@aureooms/js-codec",
+  "name": "@codec-bytes/error",
   "description": "Codecs for JavaScript",
   "version": "4.0.0",
   "license": "AGPL-3.0",
-  "author": "aureooms",
-  "homepage": "https://make-github-pseudonymous-again.github.io/js-codec",
+  "author": "make-github-pseudonymous-again",
+  "homepage": "https://codec-bytes.github.io/error",
   "repository": {
     "type": "git",
-    "url": "https://github.com/make-github-pseudonymous-again/js-codec"
+    "url": "https://github.com/codec-bytes/error"
   },
   "bugs": {
-    "url": "https://github.com/make-github-pseudonymous-again/js-codec/issues"
+    "url": "https://github.com/codec-bytes/error/issues"
   },
   "keywords": [
     "codec",
@@ -57,33 +57,33 @@
     "travis": "npm run lint-config && npm run lint && npm run cover"
   },
   "dependencies": {
-    "@aureooms/js-error": "^5.0.2"
+    "@failure-abstraction/error": "^6.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.13.10",
-    "@babel/preset-env": "7.13.10",
-    "@babel/register": "7.13.8",
-    "@commitlint/cli": "12.0.1",
+    "@babel/core": "7.19.3",
+    "@babel/preset-env": "7.19.3",
+    "@babel/register": "7.18.9",
+    "@commitlint/cli": "17.1.2",
     "@js-library/commitlint-config": "0.0.4",
     "ava": "3.15.0",
     "babel-plugin-transform-remove-console": "6.9.4",
-    "babel-plugin-unassert": "3.0.1",
+    "babel-plugin-unassert": "3.2.0",
     "babel-preset-power-assert": "3.0.0",
-    "c8": "7.6.0",
-    "coveralls": "3.1.0",
+    "c8": "7.12.0",
+    "coveralls": "3.1.1",
     "esdoc": "1.1.0",
     "esdoc-inject-script-plugin": "1.0.0",
     "esdoc-inject-style-plugin": "1.0.0",
     "esdoc-standard-plugin": "1.0.0",
     "fixpack": "4.0.0",
-    "husky": "5.1.3",
-    "lint-staged": "10.5.4",
-    "microbundle": "0.13.0",
-    "np": "7.4.0",
-    "pinst": "2.1.6",
+    "husky": "8.0.1",
+    "lint-staged": "13.0.3",
+    "microbundle": "0.15.1",
+    "np": "7.6.2",
+    "pinst": "3.0.0",
     "power-assert": "1.6.1",
-    "regenerator-runtime": "0.13.7",
-    "xo": "0.38.2"
+    "regenerator-runtime": "0.13.9",
+    "xo": "0.52.4"
   },
   "ava": {
     "files": [

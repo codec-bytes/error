@@ -1,13 +1,12 @@
 import test from 'ava';
 
-import {ValueError} from '@aureooms/js-error';
-
 import {
 	CodecError,
 	EncodeError,
 	DecodeError,
 	TranslateError,
 } from '../../src/index.js';
+import {ValueError} from './_fixtures.js';
 
 function macro(t, MyCodecError) {
 	const encoding = Math.random().toString();

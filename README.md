@@ -8,8 +8,7 @@ See [docs](https://codec-bytes.github.io/error/index.html).
 [![License](https://img.shields.io/github/license/codec-bytes/error.svg)](https://raw.githubusercontent.com/codec-bytes/error/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@codec-bytes/error.svg)](https://www.npmjs.org/package/@codec-bytes/error)
 [![Build](https://img.shields.io/travis/codec-bytes/error/main.svg)](https://travis-ci.com/codec-bytes/error/branches)
-[![Dependencies](https://img.shields.io/david/codec-bytes/error.svg)](https://david-dm.org/codec-bytes/error)
-[![Dev dependencies](https://img.shields.io/david/dev/codec-bytes/error.svg)](https://david-dm.org/codec-bytes/error?type=dev)
+[![Dependencies](https://img.shields.io/librariesio/github/codec-bytes/error.svg)](https://github.com/codec-bytes/error/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/codec-bytes/error.svg)](https://github.com/codec-bytes/error/issues)
 [![Downloads](https://img.shields.io/npm/dm/@codec-bytes/error.svg)](https://www.npmjs.org/package/@codec-bytes/error)
 

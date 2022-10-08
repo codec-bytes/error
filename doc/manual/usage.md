@@ -3,14 +3,14 @@
 The code needs a ES2015+ polyfill to work, for example
 [regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).
 ```js
-require( 'regenerator-runtime/runtime' ) ;
+await import( 'regenerator-runtime/runtime.js' ) ;
 // or
 import 'regenerator-runtime/runtime.js' ;
 ```
 
 Then
 ```js
-const codec = require( '@codec-bytes/error' ) ;
+const codec = await import( '@codec-bytes/error' ) ;
 // or
 import * as codec from '@codec-bytes/error' ;
 ```

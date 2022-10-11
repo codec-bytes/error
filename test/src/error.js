@@ -5,7 +5,7 @@ import {
 	EncodeError,
 	DecodeError,
 	TranslateError,
-} from '../../src/index.js';
+} from '#module';
 import {ValueError} from './_fixtures.js';
 
 function macro(t, MyCodecError) {

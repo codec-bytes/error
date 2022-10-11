@@ -7,7 +7,7 @@ See [docs](https://codec-bytes.github.io/error/index.html).
 
 [![License](https://img.shields.io/github/license/codec-bytes/error.svg)](https://raw.githubusercontent.com/codec-bytes/error/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@codec-bytes/error.svg)](https://www.npmjs.org/package/@codec-bytes/error)
-[![Tests](https://img.shields.io/github/workflow/status/codec-bytes/error/ci:test?event=push&label=tests)](https://github.com/codec-bytes/error/actions/workflows/ci:test.yml?query=branch:main)
+[![Tests](https://img.shields.io/github/workflow/status/codec-bytes/error/ci?event=push&label=tests)](https://github.com/codec-bytes/error/actions/workflows/ci.yml?query=branch:main)
 [![Dependencies](https://img.shields.io/librariesio/github/codec-bytes/error.svg)](https://github.com/codec-bytes/error/network/dependencies)
 [![GitHub issues](https://img.shields.io/github/issues/codec-bytes/error.svg)](https://github.com/codec-bytes/error/issues)
 [![Downloads](https://img.shields.io/npm/dm/@codec-bytes/error.svg)](https://www.npmjs.org/package/@codec-bytes/error)

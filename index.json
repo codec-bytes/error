@@ -567,9 +567,9 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/CodecError.js",
-    "content": "import {ValueError} from '@aureooms/js-error';\n\nexport class CodecError extends ValueError {\n\tconstructor(encoding, reason, object, position) {\n\t\tsuper(reason);\n\n\t\tthis.encoding = encoding;\n\t\tthis.reason = reason.toString();\n\t\tthis.object = object;\n\t\tthis.position = position;\n\t}\n}\n",
+    "content": "import {ValueError} from '@failure-abstraction/error';\n\nexport class CodecError extends ValueError {\n\tconstructor(encoding, reason, object, position) {\n\t\tsuper(reason);\n\n\t\tthis.encoding = encoding;\n\t\tthis.reason = reason.toString();\n\t\tthis.object = object;\n\t\tthis.position = position;\n\t}\n}\n",
     "static": true,
-    "longname": "/home/runner/work/js-codec/js-codec/src/CodecError.js",
+    "longname": "/home/runner/work/error/error/src/CodecError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -583,14 +583,14 @@
     "longname": "src/CodecError.js~CodecError",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-codec/src/CodecError.js",
+    "importPath": "@codec-bytes/error/src/CodecError.js",
     "importStyle": "{CodecError}",
     "description": null,
     "lineNumber": 3,
     "undocument": true,
     "interface": false,
     "extends": [
-      "@aureooms/js-error~ValueError"
+      "@failure-abstraction/error~ValueError"
     ]
   },
   {
@@ -681,7 +681,7 @@
     "name": "src/DecodeError.js",
     "content": "import {CodecError} from './CodecError.js';\n\nexport class DecodeError extends CodecError {}\n",
     "static": true,
-    "longname": "/home/runner/work/js-codec/js-codec/src/DecodeError.js",
+    "longname": "/home/runner/work/error/error/src/DecodeError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -695,7 +695,7 @@
     "longname": "src/DecodeError.js~DecodeError",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-codec/src/DecodeError.js",
+    "importPath": "@codec-bytes/error/src/DecodeError.js",
     "importStyle": "{DecodeError}",
     "description": null,
     "lineNumber": 3,
@@ -711,7 +711,7 @@
     "name": "src/EncodeError.js",
     "content": "import {CodecError} from './CodecError.js';\n\nexport class EncodeError extends CodecError {}\n",
     "static": true,
-    "longname": "/home/runner/work/js-codec/js-codec/src/EncodeError.js",
+    "longname": "/home/runner/work/error/error/src/EncodeError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -725,7 +725,7 @@
     "longname": "src/EncodeError.js~EncodeError",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-codec/src/EncodeError.js",
+    "importPath": "@codec-bytes/error/src/EncodeError.js",
     "importStyle": "{EncodeError}",
     "description": null,
     "lineNumber": 3,
@@ -741,7 +741,7 @@
     "name": "src/TranslateError.js",
     "content": "import {CodecError} from './CodecError.js';\n\nexport class TranslateError extends CodecError {}\n",
     "static": true,
-    "longname": "/home/runner/work/js-codec/js-codec/src/TranslateError.js",
+    "longname": "/home/runner/work/error/error/src/TranslateError.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
@@ -755,7 +755,7 @@
     "longname": "src/TranslateError.js~TranslateError",
     "access": "public",
     "export": true,
-    "importPath": "@aureooms/js-codec/src/TranslateError.js",
+    "importPath": "@codec-bytes/error/src/TranslateError.js",
     "importStyle": "{TranslateError}",
     "description": null,
     "lineNumber": 3,
@@ -769,25 +769,25 @@
     "__docId__": 61,
     "kind": "file",
     "name": "src/index.js",
-    "content": "export * from './CodecError.js';\nexport * from './DecodeError.js';\nexport * from './EncodeError.js';\nexport * from './TranslateError.js';\n",
+    "content": "export * from './CodecError.js';\nexport * from './DecodeError.js';\nexport * from './EncodeError.js';\nexport * from './TranslateError.js';\n\nexport {ValueError} from '@failure-abstraction/error';\n",
     "static": true,
-    "longname": "/home/runner/work/js-codec/js-codec/src/index.js",
+    "longname": "/home/runner/work/error/error/src/index.js",
     "access": "public",
     "description": null,
     "lineNumber": 1
   },
   {
     "kind": "index",
-    "content": "[@aureooms/js-codec](https://aureooms.github.io/js-codec)\n==\n\nCodecs for JavaScript.\nSee [docs](https://aureooms.github.io/js-codec/index.html).\n\n[![License](https://img.shields.io/github/license/aureooms/js-codec.svg)](https://raw.githubusercontent.com/aureooms/js-codec/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@aureooms/js-codec.svg)](https://www.npmjs.org/package/@aureooms/js-codec)\n[![Build](https://img.shields.io/travis/aureooms/js-codec/main.svg)](https://travis-ci.com/aureooms/js-codec/branches)\n[![Dependencies](https://img.shields.io/david/aureooms/js-codec.svg)](https://david-dm.org/aureooms/js-codec)\n[![Dev dependencies](https://img.shields.io/david/dev/aureooms/js-codec.svg)](https://david-dm.org/aureooms/js-codec?type=dev)\n[![GitHub issues](https://img.shields.io/github/issues/aureooms/js-codec.svg)](https://github.com/aureooms/js-codec/issues)\n[![Downloads](https://img.shields.io/npm/dm/@aureooms/js-codec.svg)](https://www.npmjs.org/package/@aureooms/js-codec)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/aureooms/js-codec.svg)](https://codeclimate.com/github/aureooms/js-codec/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/aureooms/js-codec.svg)](https://codeclimate.com/github/aureooms/js-codec/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/aureooms/js-codec/main.svg)](https://codecov.io/gh/aureooms/js-codec)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/aureooms/js-codec.svg)](https://codeclimate.com/github/aureooms/js-codec/trends/technical_debt)\n[![Documentation](https://aureooms.github.io/js-codec/badge.svg)](https://aureooms.github.io/js-codec/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@aureooms/js-codec)](https://bundlephobia.com/result?p=@aureooms/js-codec)\n\n## String codecs\n\n  - [x] [@aureooms/js-codec-ascii](https://github.com/aureooms/js-codec-ascii)\n  - [ ] [@aureooms/js-codec-utf16](https://github.com/aureooms/js-codec-utf16)\n  - [ ] [@aureooms/js-codec-utf8](https://github.com/aureooms/js-codec-utf8)\n  - [x] [@aureooms/js-codec-base64](https://github.com/aureooms/js-codec-base64)\n  - [x] [@aureooms/js-codec-base32](https://github.com/aureooms/js-codec-base32)\n  - [x] [@aureooms/js-codec-base16](https://github.com/aureooms/js-codec-base16)\n",
-    "longname": "/home/runner/work/js-codec/js-codec/README.md",
+    "content": ":fax:\n[@codec-bytes/error](https://codec-bytes.github.io/error)\n==\n\nCodec errors for JavaScript.\nSee [docs](https://codec-bytes.github.io/error/index.html).\n\n[![License](https://img.shields.io/github/license/codec-bytes/error.svg)](https://raw.githubusercontent.com/codec-bytes/error/main/LICENSE)\n[![Version](https://img.shields.io/npm/v/@codec-bytes/error.svg)](https://www.npmjs.org/package/@codec-bytes/error)\n[![Tests](https://img.shields.io/github/workflow/status/codec-bytes/error/ci?event=push&label=tests)](https://github.com/codec-bytes/error/actions/workflows/ci.yml?query=branch:main)\n[![Dependencies](https://img.shields.io/librariesio/github/codec-bytes/error.svg)](https://github.com/codec-bytes/error/network/dependencies)\n[![GitHub issues](https://img.shields.io/github/issues/codec-bytes/error.svg)](https://github.com/codec-bytes/error/issues)\n[![Downloads](https://img.shields.io/npm/dm/@codec-bytes/error.svg)](https://www.npmjs.org/package/@codec-bytes/error)\n\n[![Code issues](https://img.shields.io/codeclimate/issues/codec-bytes/error.svg)](https://codeclimate.com/github/codec-bytes/error/issues)\n[![Code maintainability](https://img.shields.io/codeclimate/maintainability/codec-bytes/error.svg)](https://codeclimate.com/github/codec-bytes/error/trends/churn)\n[![Code coverage (cov)](https://img.shields.io/codecov/c/gh/codec-bytes/error/main.svg)](https://codecov.io/gh/codec-bytes/error)\n[![Code technical debt](https://img.shields.io/codeclimate/tech-debt/codec-bytes/error.svg)](https://codeclimate.com/github/codec-bytes/error/trends/technical_debt)\n[![Documentation](https://codec-bytes.github.io/error/badge.svg)](https://codec-bytes.github.io/error/source.html)\n[![Package size](https://img.shields.io/bundlephobia/minzip/@codec-bytes/error)](https://bundlephobia.com/result?p=@codec-bytes/error)\n\n## String codecs\n\n  - [x] [@codec-bytes/ascii](https://github.com/codec-bytes/ascii)\n  - [ ] [@codec-bytes/utf16](https://github.com/codec-bytes/utf16)\n  - [ ] [@codec-bytes/utf8](https://github.com/codec-bytes/utf8)\n  - [x] [@codec-bytes/base64](https://github.com/codec-bytes/base64)\n  - [x] [@codec-bytes/base32](https://github.com/codec-bytes/base32)\n  - [x] [@codec-bytes/base16](https://github.com/codec-bytes/base16)\n",
+    "longname": "/home/runner/work/error/error/README.md",
     "name": "./README.md",
     "static": true,
     "access": "public"
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"@aureooms/js-codec\",\n  \"description\": \"Codecs for JavaScript\",\n  \"version\": \"4.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"aureooms\",\n  \"homepage\": \"https://aureooms.github.io/js-codec\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/aureooms/js-codec\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/aureooms/js-codec/issues\"\n  },\n  \"keywords\": [\n    \"codec\",\n    \"decode\",\n    \"encode\"\n  ],\n  \"sideEffects\": false,\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.js\",\n  \"module\": \"dist/index.module.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.js\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"c8 --all --src src --reporter=lcov npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"ava\",\n    \"travis\": \"npm run lint-config && npm run lint && npm run cover\"\n  },\n  \"dependencies\": {\n    \"@aureooms/js-error\": \"^5.0.2\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"7.13.10\",\n    \"@babel/preset-env\": \"7.13.10\",\n    \"@babel/register\": \"7.13.8\",\n    \"@commitlint/cli\": \"12.0.1\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"ava\": \"3.15.0\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.0.1\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.6.0\",\n    \"coveralls\": \"3.1.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"5.1.3\",\n    \"lint-staged\": \"10.5.4\",\n    \"microbundle\": \"0.13.0\",\n    \"np\": \"7.4.0\",\n    \"pinst\": \"2.1.6\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.7\",\n    \"xo\": \"0.38.2\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\",\n      \"@babel/register\"\n    ],\n    \"timeout\": \"1m\"\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"presets\": [\n      [\n        \"@babel/preset-env\",\n        {\n          \"targets\": [\n            \"defaults\",\n            \"maintained node versions\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": \"current node\"\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"test\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": \"current node\"\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"production\": {\n        \"plugins\": [\n          \"babel-plugin-unassert\",\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": [\n        \"error\",\n        {\n          \"cases\": {\n            \"camelCase\": true,\n            \"pascalCase\": true\n          }\n        }\n      ]\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
-    "longname": "/home/runner/work/js-codec/js-codec/package.json",
+    "content": "{\n  \"name\": \"@codec-bytes/error\",\n  \"description\": \"Codec errors for JavaScript\",\n  \"version\": \"5.0.0\",\n  \"license\": \"AGPL-3.0\",\n  \"author\": \"make-github-pseudonymous-again\",\n  \"homepage\": \"https://codec-bytes.github.io/error\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/codec-bytes/error\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/codec-bytes/error/issues\"\n  },\n  \"keywords\": [\n    \"codec\",\n    \"decode\",\n    \"encode\"\n  ],\n  \"sideEffects\": false,\n  \"type\": \"module\",\n  \"source\": \"src/index.js\",\n  \"main\": \"dist/index.cjs\",\n  \"module\": \"dist/index.module.js\",\n  \"esmodule\": \"dist/index.modern.js\",\n  \"umd:main\": \"dist/index.umd.js\",\n  \"unpkg\": \"dist/index.umd.js\",\n  \"exports\": {\n    \".\": {\n      \"browser\": \"./dist/index.module.js\",\n      \"umd\": \"./dist/index.umd.js\",\n      \"require\": \"./dist/index.cjs\",\n      \"default\": \"./dist/index.modern.js\"\n    }\n  },\n  \"files\": [\n    \"dist\"\n  ],\n  \"publishConfig\": {\n    \"access\": \"public\"\n  },\n  \"scripts\": {\n    \"build\": \"NODE_ENV=production microbundle\",\n    \"build-docs\": \"esdoc\",\n    \"build-gh-pages\": \"npm run build-docs\",\n    \"commit-msg\": \"commitlint --edit\",\n    \"cover\": \"NODE_ENV=cover c8 --all --src src --reporter lcov --reporter text-summary --reporter text npm test\",\n    \"debug\": \"NODE_ENV=debug npm run test -- -st --fail-fast\",\n    \"dev\": \"npm run lint-config-and-fix && npm run lint-and-fix && npm run cover -- -- -st --fail-fast\",\n    \"install-hooks\": \"husky install\",\n    \"lint\": \"xo\",\n    \"lint-and-fix\": \"npm run lint -- --fix\",\n    \"lint-config\": \"fixpack --dryRun\",\n    \"lint-config-and-fix\": \"fixpack || fixpack\",\n    \"postinstall\": \"npm run install-hooks\",\n    \"postpublish\": \"pinst --enable\",\n    \"precommit\": \"lint-staged\",\n    \"prepare\": \"npm run build\",\n    \"prepublishOnly\": \"pinst --disable\",\n    \"release\": \"np --message ':hatching_chick: release: Bumping to v%s.'\",\n    \"test\": \"npm run test:src\",\n    \"test-cmd\": \"NODE_LOADER_CONFIG=test/loader/config.js ava\",\n    \"test:cjs\": \"IMPORT_MAP_PATH=test/import-maps/dist/index.json npm run test-cmd\",\n    \"test:dist\": \"npm run test:modern && npm run test:module && npm run test:cjs\",\n    \"test:modern\": \"IMPORT_MAP_PATH=test/import-maps/dist/index.modern.json npm run test-cmd\",\n    \"test:module\": \"IMPORT_MAP_PATH=test/import-maps/dist/index.module.json npm run test-cmd\",\n    \"test:src\": \"IMPORT_MAP_PATH=test/import-maps/src/index.json npm run test-cmd\"\n  },\n  \"dependencies\": {\n    \"@failure-abstraction/error\": \"^6.0.1\"\n  },\n  \"devDependencies\": {\n    \"@babel/core\": \"7.19.3\",\n    \"@babel/preset-env\": \"7.19.3\",\n    \"@commitlint/cli\": \"17.1.2\",\n    \"@js-library/commitlint-config\": \"0.0.4\",\n    \"@node-loader/babel\": \"2.0.1\",\n    \"@node-loader/core\": \"2.0.0\",\n    \"@node-loader/import-maps\": \"1.1.0\",\n    \"ava\": \"4.3.3\",\n    \"babel-plugin-transform-remove-console\": \"6.9.4\",\n    \"babel-plugin-unassert\": \"3.2.0\",\n    \"babel-preset-power-assert\": \"3.0.0\",\n    \"c8\": \"7.12.0\",\n    \"esdoc\": \"1.1.0\",\n    \"esdoc-inject-script-plugin\": \"1.0.0\",\n    \"esdoc-inject-style-plugin\": \"1.0.0\",\n    \"esdoc-standard-plugin\": \"1.0.0\",\n    \"fixpack\": \"4.0.0\",\n    \"husky\": \"8.0.1\",\n    \"lint-staged\": \"13.0.3\",\n    \"microbundle\": \"0.15.1\",\n    \"np\": \"7.6.2\",\n    \"pinst\": \"3.0.0\",\n    \"power-assert\": \"1.6.1\",\n    \"regenerator-runtime\": \"0.13.9\",\n    \"xo\": \"0.52.4\"\n  },\n  \"ava\": {\n    \"files\": [\n      \"test/src/**/*\"\n    ],\n    \"require\": [\n      \"regenerator-runtime/runtime\"\n    ],\n    \"timeout\": \"1m\",\n    \"nodeArguments\": [\n      \"--experimental-loader=@node-loader/core\"\n    ]\n  },\n  \"babel\": {\n    \"sourceMaps\": true,\n    \"plugins\": [\n      [\n        \"transform-remove-console\",\n        {\n          \"exclude\": [\n            \"log\",\n            \"error\",\n            \"warn\"\n          ]\n        }\n      ]\n    ],\n    \"env\": {\n      \"debug\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ],\n        \"plugins\": [\n          [\n            \"transform-remove-console\",\n            {\n              \"exclude\": [\n                \"debug\",\n                \"log\",\n                \"error\",\n                \"warn\"\n              ]\n            }\n          ]\n        ]\n      },\n      \"test\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"cover\": {\n        \"sourceMaps\": \"both\",\n        \"presets\": [\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"development\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ],\n          \"babel-preset-power-assert\"\n        ]\n      },\n      \"production\": {\n        \"presets\": [\n          [\n            \"@babel/preset-env\",\n            {\n              \"targets\": [\n                \"defaults\",\n                \"maintained node versions\"\n              ]\n            }\n          ]\n        ],\n        \"plugins\": [\n          \"babel-plugin-unassert\"\n        ]\n      }\n    }\n  },\n  \"lint-staged\": {\n    \"*.js\": [\n      \"npm run lint-and-fix\"\n    ],\n    \"package.json\": [\n      \"npm run lint-config-and-fix\"\n    ]\n  },\n  \"prettier\": {\n    \"trailingComma\": \"all\"\n  },\n  \"xo\": {\n    \"prettier\": true,\n    \"plugins\": [\n      \"unicorn\"\n    ],\n    \"rules\": {\n      \"unicorn/filename-case\": [\n        \"error\",\n        {\n          \"cases\": {\n            \"camelCase\": true,\n            \"pascalCase\": true\n          }\n        }\n      ],\n      \"unicorn/prefer-node-protocol\": \"off\"\n    },\n    \"overrides\": [\n      {\n        \"files\": [\n          \"doc/**\"\n        ],\n        \"env\": \"browser\"\n      }\n    ]\n  }\n}\n",
+    "longname": "/home/runner/work/error/error/package.json",
     "name": "package.json",
     "static": true,
     "access": "public"
@@ -802,7 +802,7 @@
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-codec/js-codec/doc/manual/overview.md",
+    "longname": "/home/runner/work/error/error/doc/manual/overview.md",
     "name": "./doc/manual/overview.md",
     "content": "# Overview\n",
     "static": true,
@@ -810,25 +810,25 @@
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-codec/js-codec/doc/manual/installation.md",
+    "longname": "/home/runner/work/error/error/doc/manual/installation.md",
     "name": "./doc/manual/installation.md",
-    "content": "# Installation\n\nCan be managed using\n[jspm](http://jspm.io)\nor [npm](https://github.com/npm/npm).\n\n### jspm\n```terminal\njspm install npm:@aureooms/js-codec\n```\n\n### npm\n```terminal\nnpm install @aureooms/js-codec --save\n```\n",
+    "content": "# Installation\n\nCan be managed using\n[yarn](https://yarnpkg.com/en/docs),\n[npm](https://docs.npmjs.com),\nor [jspm](https://jspm.org/docs).\n\n\n### yarn\n```terminal\nyarn add @codec-bytes/error\n```\n\n### npm\n```terminal\nnpm install @codec-bytes/error --save\n```\n\n### jspm\n```terminal\njspm install npm:@codec-bytes/error\n```\n",
     "static": true,
     "access": "public"
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-codec/js-codec/doc/manual/usage.md",
+    "longname": "/home/runner/work/error/error/doc/manual/usage.md",
     "name": "./doc/manual/usage.md",
-    "content": "# Usage\n\nThe code needs a ES2015+ polyfill to work, for example\n[regenerator-runtime/runtime](https://babeljs.io/docs/usage/polyfill).\n```js\nrequire( 'regenerator-runtime/runtime' ) ;\n// or\nimport 'regenerator-runtime/runtime.js' ;\n```\n\nThen\n```js\nconst codec = require( '@aureooms/js-codec' ) ;\n// or\nimport * as codec from '@aureooms/js-codec' ;\n```\n",
+    "content": "# Usage\n\nImport the library where needed\n```js\nconst {EncodeError, DecodeError} = await import('@codec-bytes/error');\n// or\nimport {EncodeError, DecodeError} from '@codec-bytes/error';\n```\n",
     "static": true,
     "access": "public"
   },
   {
     "kind": "manual",
-    "longname": "/home/runner/work/js-codec/js-codec/doc/manual/example.md",
+    "longname": "/home/runner/work/error/error/doc/manual/example.md",
     "name": "./doc/manual/example.md",
-    "content": "# Example\n",
+    "content": "# Examples\n\n> More examples in [the test files](https://github.com/codec-bytes/error/tree/main/test/src).\n",
     "static": true,
     "access": "public"
   }

@@ -1,26 +1,26 @@
 window.esdocSearchIndex = [
   [
-    "@aureooms/js-codec/src/codecerror.js~codecerror",
+    "@codec-bytes/error/src/codecerror.js~codecerror",
     "class/src/CodecError.js~CodecError.html",
-    "<span>CodecError</span> <span class=\"search-result-import-path\">@aureooms/js-codec/src/CodecError.js</span>",
+    "<span>CodecError</span> <span class=\"search-result-import-path\">@codec-bytes/error/src/CodecError.js</span>",
     "class"
   ],
   [
-    "@aureooms/js-codec/src/decodeerror.js~decodeerror",
+    "@codec-bytes/error/src/decodeerror.js~decodeerror",
     "class/src/DecodeError.js~DecodeError.html",
-    "<span>DecodeError</span> <span class=\"search-result-import-path\">@aureooms/js-codec/src/DecodeError.js</span>",
+    "<span>DecodeError</span> <span class=\"search-result-import-path\">@codec-bytes/error/src/DecodeError.js</span>",
     "class"
   ],
   [
-    "@aureooms/js-codec/src/encodeerror.js~encodeerror",
+    "@codec-bytes/error/src/encodeerror.js~encodeerror",
     "class/src/EncodeError.js~EncodeError.html",
-    "<span>EncodeError</span> <span class=\"search-result-import-path\">@aureooms/js-codec/src/EncodeError.js</span>",
+    "<span>EncodeError</span> <span class=\"search-result-import-path\">@codec-bytes/error/src/EncodeError.js</span>",
     "class"
   ],
   [
-    "@aureooms/js-codec/src/translateerror.js~translateerror",
+    "@codec-bytes/error/src/translateerror.js~translateerror",
     "class/src/TranslateError.js~TranslateError.html",
-    "<span>TranslateError</span> <span class=\"search-result-import-path\">@aureooms/js-codec/src/TranslateError.js</span>",
+    "<span>TranslateError</span> <span class=\"search-result-import-path\">@codec-bytes/error/src/TranslateError.js</span>",
     "class"
   ],
   [

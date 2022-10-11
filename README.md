@@ -2,7 +2,7 @@
 [@codec-bytes/error](https://codec-bytes.github.io/error)
 ==
 
-Codecs for JavaScript.
+Codec errors for JavaScript.
 See [docs](https://codec-bytes.github.io/error/index.html).
 
 [![License](https://img.shields.io/github/license/codec-bytes/error.svg)](https://raw.githubusercontent.com/codec-bytes/error/main/LICENSE)

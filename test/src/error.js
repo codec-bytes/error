@@ -1,12 +1,7 @@
 import test from 'ava';
 
-import {
-	CodecError,
-	EncodeError,
-	DecodeError,
-	TranslateError,
-} from '#module';
 import {ValueError} from './_fixtures.js';
+import {CodecError, EncodeError, DecodeError, TranslateError} from '#module';
 
 function macro(t, MyCodecError) {
 	const encoding = Math.random().toString();
@@ -32,9 +27,9 @@ function macro(t, MyCodecError) {
 	t.is(myerror.position, position);
 }
 
-macro.title = (_, MyCodecError) => `${MyCodecError}`;
+macro.title = (title, MyCodecError) => title ?? MyCodecError.name;
 
-test(macro, CodecError);
-test(macro, EncodeError);
-test(macro, DecodeError);
-test(macro, TranslateError);
+test('CodecError', macro, CodecError);
+test('EncodeError', macro, EncodeError);
+test('DecodeError', macro, DecodeError);
+test('TranslateError', macro, TranslateError);

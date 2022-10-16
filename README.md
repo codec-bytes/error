@@ -4,6 +4,7 @@
 
 Codec errors for JavaScript.
 See [docs](https://codec-bytes.github.io/error/index.html).
+Parent is [@codec-bytes/about](https://github.com/codec-bytes/about).
 
 [![License](https://img.shields.io/github/license/codec-bytes/error.svg)](https://raw.githubusercontent.com/codec-bytes/error/main/LICENSE)
 [![Version](https://img.shields.io/npm/v/@codec-bytes/error.svg)](https://www.npmjs.org/package/@codec-bytes/error)
@@ -18,12 +19,3 @@ See [docs](https://codec-bytes.github.io/error/index.html).
 [![Code technical debt](https://img.shields.io/codeclimate/tech-debt/codec-bytes/error.svg)](https://codeclimate.com/github/codec-bytes/error/trends/technical_debt)
 [![Documentation](https://codec-bytes.github.io/error/badge.svg)](https://codec-bytes.github.io/error/source.html)
 [![Package size](https://img.shields.io/bundlephobia/minzip/@codec-bytes/error)](https://bundlephobia.com/result?p=@codec-bytes/error)
-
-## String codecs
-
-  - [x] [@codec-bytes/ascii](https://github.com/codec-bytes/ascii)
-  - [ ] [@codec-bytes/utf16](https://github.com/codec-bytes/utf16)
-  - [ ] [@codec-bytes/utf8](https://github.com/codec-bytes/utf8)
-  - [x] [@codec-bytes/base64](https://github.com/codec-bytes/base64)
-  - [x] [@codec-bytes/base32](https://github.com/codec-bytes/base32)
-  - [x] [@codec-bytes/base16](https://github.com/codec-bytes/base16)

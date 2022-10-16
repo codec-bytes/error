@@ -1,7 +1,7 @@
 {
   "name": "@codec-bytes/error",
   "description": "Codec errors for JavaScript",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "license": "AGPL-3.0",
   "author": "make-github-pseudonymous-again",
   "homepage": "https://codec-bytes.github.io/error",

@@ -1,6 +1,7 @@
 import test from 'ava';
 
 import {ValueError} from './_fixtures.js';
+
 import {CodecError, EncodeError, DecodeError, TranslateError} from '#module';
 
 function macro(t, MyCodecError) {
